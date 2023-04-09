@@ -29,7 +29,7 @@ I chose the cafes and restaurants with seating capacity data set from the Melbou
 
 
 <h2>Coding Information</h2>
-<p>All of my code is contained in a single SQL file. I have included comments for each step to explain the reasoning behind my choices. Most, if not all, of the table alterations were made in SQL for the purposes of demonstrating my proficiency in the language.</p>
+<p>All of my code is contained in a single SQL file, which I have extensively commented on to explain the reasoning behind my choices. For the purpose of demonstrating my proficiency in the language, most, if not all, of the table alterations were made in SQL.</p>
 
 <h2>Project Status</h2>
 <p>This project is being worked on daily in my free time after work, so please check for updates regularly. As of now, the project is ongoing.</p>
