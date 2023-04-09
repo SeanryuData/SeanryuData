@@ -78,7 +78,9 @@ Map chart using the latitude and longitude values to check the distribution of l
 
 <h3>Data Exploration#4</h3>
 <p>
-During my trip in Melbourne, I found it very interesting to see that not many cafe offered a spacious seats, many of the cafe with good google reviews I visited offered seats less than 10. 
+During my trip in Melbourne, I found it very interesting to see that not many cafe offered a spacious seats, many of the cafe with good google reviews I visited offered seats less than 10.
+So in this project, I wanted check if that was due to Covid lock down.
+Melbourne's lockdown period first started on March-2020
 </P>
   <img src="https://user-images.githubusercontent.com/130117092/230755835-c643075e-546a-4039-a466-c3701678d765.png" alt="description of the image" width="500" height="300">
 
