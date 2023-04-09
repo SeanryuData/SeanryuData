@@ -41,16 +41,29 @@ SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li
 <li><em>Microsoft Onedrive Excel</em></li>
 </ul>
 
-<h2>Project Methodology</h2>
+<h3>Data Exploration#1</h3>
 <p>
 The original data set was downloaded in CSV, uploaded to Onedrive folder for an initial exploration.
 Then to increase the performance inside SSMS
 eliminated unncessary columns, then to practice joining inside SQL, I purposly split the file into two parts [Shop] and [Add].
 </p>
 
-<h2>Outlier and flaws inside the data</h2>
+<h3>Data exploration#2</h3>
 <p>
+After completing the Data ETL - Extract, Transform (refer to project.sql), then loading to Power BI. I found two "Flaws" inside the data set (Refer to below SC:)
+ <img src="https://user-images.githubusercontent.com/130117092/230755160-13e4ede2-26f4-477f-8bb2-f5adabb83d79.png" alt="Image description">
 
   
- <img src="https://user-images.githubusercontent.com/130117092/230755160-13e4ede2-26f4-477f-8bb2-f5adabb83d79.png" alt="Image description">
+  
 </p>
+
+
+<h3>Data exploration#3</h3>
+<p>
+After further modifying the "View" tables inside  SQL, I 
+<img src="https://user-images.githubusercontent.com/130117092/230755809-04cafe08-9676-4c24-84a8-461c3ad58dca.png" alt="description of the image" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/130117092/230755835-c643075e-546a-4039-a466-c3701678d765.png" alt="description of the image" width="500" height="300">
+
+  
+  
+  </p>
