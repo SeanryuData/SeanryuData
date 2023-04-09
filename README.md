@@ -52,18 +52,33 @@ eliminated unncessary columns, then to practice joining inside SQL, I purposly s
 <p>
 After completing the Data ETL - Extract, Transform (refer to project.sql), then loading to Power BI. I found two "Flaws" inside the data set (Refer to below SC:)
  <img src="https://user-images.githubusercontent.com/130117092/230755160-13e4ede2-26f4-477f-8bb2-f5adabb83d79.png" alt="Image description">
-
-  
-  
+I see followings from BI visuals of above.
+Some of the Business had ridiculusly high value for Number_Of_Seats.
+There are some businesses with Regional Address value of (Blank).
+Which I will investigate inside SQL. (While I could investigate and perform most of the transformation inside MS powerBI, using Power Query. I still used SQL as it would be a good practice, please refer from line 184 of project.sql)
 </p>
 
 
 <h3>Data exploration#3</h3>
 <p>
-After further modifying the "View" tables inside  SQL, I 
-<img src="https://user-images.githubusercontent.com/130117092/230755809-04cafe08-9676-4c24-84a8-461c3ad58dca.png" alt="description of the image" width="500" height="300">
-<img src="https://user-images.githubusercontent.com/130117092/230755835-c643075e-546a-4039-a466-c3701678d765.png" alt="description of the image" width="500" height="300">
+After further modifying the "View" tables inside  SQL, I created following visuals.
+<ul>
+  <li><em>
+  (Census Year)Slicers and (Area)buttons for interactions between visuals.
+</em></li>
+<li><em>
+Piecharts of Seating types and Small Area to compare the categorial ratios.
+</em></li>
+<li><em>
+Map chart using the latitude and longitude values to check the distribution of locations of Businesses.
+</em></li>
+</ul>
 
-  
-  
-  </p>
+<img src="https://user-images.githubusercontent.com/130117092/230755809-04cafe08-9676-4c24-84a8-461c3ad58dca.png" alt="description of the image" width="500" height="300">
+
+<h3>Data Exploration#4</h3>
+<p>
+During my trip in Melbourne, I found it very interesting to see that not many cafe offered a spacious seats, many of the cafe with good google reviews I visited offered seats less than 10. 
+</P>
+  <img src="https://user-images.githubusercontent.com/130117092/230755835-c643075e-546a-4039-a466-c3701678d765.png" alt="description of the image" width="500" height="300">
+
