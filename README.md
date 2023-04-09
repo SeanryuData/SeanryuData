@@ -28,5 +28,25 @@ ModeMode</em></li>
 <h2>Coding Information</h2>
 <p>All of my code is contained in a single SQL file, which I have extensively commented on to explain the reasoning behind my choices. For the purpose of demonstrating my proficiency in the language, most, if not all, of the table alterations were made in SQL.</p>
 
+
 <h2>Project Status</h2>
-<p>This project is being worked on daily in my free time after work, so please check for updates regularly. As of now, the project is ongoing.</p>
+<p>This project is being worked on daily in my free time after work, so please check for updates regularly. As of now, the project is ongoing.
+</p>
+
+<h2>Programmes used</h2>
+<ul>
+  <li><em>
+SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li>
+<li><em>Microsoft Power BI</em></li>
+<li><em>Microsoft Onedrive Excel</em></li>
+</ul>
+
+<h2>Project Methodology</h2>
+<p>
+The original data set was downloaded in CSV, uploaded to Onedrive folder for an initial exploration.
+Then to increase the performance inside SSMS
+eliminate unncessary columns to for import, then to practice joining inside SQL, I purposly split the 
+</p>
+![image](https://user-images.githubusercontent.com/130117092/230755160-13e4ede2-26f4-477f-8bb2-f5adabb83d79.png)
+
+
