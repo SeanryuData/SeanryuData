@@ -1,38 +1,27 @@
 ### Hi there 👋 Welcome to Sean's Data Analytic Portfolio.
+<h1>Project Title</h1>
 
-<header>
-Melbourne Cafe Data Analysis Project
-This is a personal project that I created to gain experience and utilize my data analytics skills, which I acquired through my certifications in SQL and PowerBI. I have earned the following certifications:
+<p>This is a project I decided to create for the purpose of gaining experience and utilizing my data analytics skills, which I acquired through various certification programs in SQL and PowerBI.</p>
 
-Certification A
-Certification B
-Certification C
-The goal of this project is to analyze data on cafes and restaurants in Melbourne, which I obtained from the Melbourne Open Data website. As a coffee fan, I have always been intrigued by the coffee culture in Melbourne and wanted to explore the data to gain insights about the industry.
+<h2>Certifications Earned</h2>
+<ul>
+  <li><em>Certification 1</em></li>
+  <li><em>Certification 2</em></li>
+  <li><em>Certification 3</em></li>
+</ul>
 
-This project is being worked on daily during my free time after work, and I will continue to update it with new findings and insights.
+<h2>Data Source</h2>
+<p>I used the following data set as the basis for this project:</p>
+<ul>
+  <li><strong>Data set name:</strong> <em>Data set name</em></li>
+  <li><strong>Link:</strong> <a href="Data set URL">Data set URL</a></li>
+</ul>
 
-Table of Contents
-Introduction
-Data
-Methodology
-Results
-Conclusion
-Future Work
-References
-Data
-The dataset I used in this project contains information about cafes and restaurants in Melbourne, including their seating capacity, location, and other relevant details. I chose this dataset because of my recent trip to Melbourne and my interest in coffee culture.
+<h2>Reason for Choosing Data</h2>
+<p>I chose this data set because of my recent coffee trip to Melbourne. As a coffee fan, I heard a lot about the coffee culture in Melbourne, and I thought it would be both enjoyable and educative for me to find insights to share from the data set. Additionally, I wanted to compare my findings from data analytics to my personal experience when I visited Melbourne in March 2023.</p>
 
-Methodology
-For this project, I used SQL to clean and transform the data, and PowerBI to visualize the results. I have included a single SQL file in this repository that contains all of my code. I have also added comments to each step to explain my thought process and reasoning behind the changes I made.
+<h2>Coding Information</h2>
+<p>All of my code is contained in a single SQL file. I have included comments for each step to explain the reasoning behind my choices. Most, if not all, of the table alterations were made in SQL for the purposes of demonstrating my proficiency in the language.</p>
 
-Results
-Through my analysis, I have gained several insights about the Melbourne cafe and restaurant industry. For example, I found that the majority of cafes and restaurants have a seating capacity of 50 or less, and that the most common seating type is indoor seating. I have also created several visualizations in PowerBI to better understand the data.
-
-Conclusion
-Overall, this project has been a valuable learning experience for me, as it allowed me to apply my data analytics skills to a real-world dataset. I am excited to continue working on this project and exploring the data further.
-
-Future Work
-In the future, I plan to expand my analysis to include more variables, such as the type of cuisine offered and the prices of the cafes and restaurants. I also plan to incorporate machine learning techniques to predict customer satisfaction and other metrics.
-
-References
-Melbourne Open Data. Cafes and Restaurants with Seating Capacity.
+<h2>Project Status</h2>
+<p>This project is being worked on daily in my free time after work, so please check for updates regularly. As of now, the project is ongoing.</p>
