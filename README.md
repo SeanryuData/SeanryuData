@@ -21,11 +21,9 @@ I chose the cafes and restaurants with seating capacity data set from the Melbou
   <li><em>
 SQL Challenge - IntermediateSQL Challenge - Intermediate
 ModeMode</em></li>
-<li><em>Career Essentials in Data Analysis by Microsoft and LinkedIn
-MicrosoftMicrosoft</em></li>
-<li><em>Introduction to Career Skills in Data Analytics</em></li>
 <li><em>Microsoft Certified: Power BI Data Analyst Associate</em></li>
 </ul>
+<p>Please refer to my linked in page for more details on skills and certificates <a href="https://www.linkedin.com/in/sean-ryu-95745a1a2/details/certifications/">Sean_Ryu Linkedin</a></p>
 
 <h2>Coding Information</h2>
 <p>All of my code is contained in a single SQL file, which I have extensively commented on to explain the reasoning behind my choices. For the purpose of demonstrating my proficiency in the language, most, if not all, of the table alterations were made in SQL.</p>
