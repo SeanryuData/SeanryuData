@@ -1,5 +1,5 @@
 ### Hi there 👋 Welcome to Sean's Data Analytic Portfolio.
-<h1>Project Title</h1>
+<h1>Project Melbourne Cafe</h1>
 
 <p>This is a project I decided to create for the purpose of gaining experience and utilizing my data analytics skills, which I acquired through various certification programs in SQL and PowerBI.</p>
 
