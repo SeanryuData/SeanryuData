@@ -5,9 +5,13 @@
 
 <h2>Certifications Earned</h2>
 <ul>
-  <li><em>Certification 1</em></li>
-  <li><em>Certification 2</em></li>
-  <li><em>Certification 3</em></li>
+  <li><em>
+SQL Challenge - IntermediateSQL Challenge - Intermediate
+ModeMode</em></li>
+<li><em>Career Essentials in Data Analysis by Microsoft and LinkedInCareer Essentials in Data Analysis by Microsoft and LinkedIn
+MicrosoftMicrosoft</em></li>
+<li><em>Introduction to Career Skills in Data AnalyticsIntroduction to Career Skills in Data Analytics</em></li>
+<li><em>Microsoft Certified: Power BI Data Analyst AssociateMicrosoft Certified: Power BI Data Analyst Associate</em></li>
 </ul>
 
 <h2>Data Source</h2>
