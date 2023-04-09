@@ -79,8 +79,33 @@ Map chart using the latitude and longitude values to check the distribution of l
 <h3>Data Exploration#4</h3>
 <p>
 During my trip in Melbourne, I found it very interesting to see that not many cafe offered a spacious seats, many of the cafe with good google reviews I visited offered seats less than 10.
-So in this project, I wanted check if that was due to Covid lock down.
-Melbourne's lockdown period first started on March-2020
-</P>
-  <img src="https://user-images.githubusercontent.com/130117092/230755835-c643075e-546a-4039-a466-c3701678d765.png" alt="description of the image" width="500" height="300">
+My hypothesis was "Since this is a CBD area, so many business here decided to downsize to survive."
+To check if the hypothesis above is true, I created timed line plot visual inside power bi together with a filtering slicer of different seating ranges.
+</p>
 
+![image](https://user-images.githubusercontent.com/130117092/230772897-64ea75ab-4e21-4f74-8f94-8bb154116374.png)
+
+<p>
+
+</P>
+
+![image](https://user-images.githubusercontent.com/130117092/230772910-a06f0cba-7940-4b63-bb31-31bca68e977f.png)
+
+<p>
+Time line above is for all seating ranges below 50 (50+ are excluded as most of businesses were restaurants which is outside of our interest-coffee specialty cafe)
+(Melbourne's lockdown period first started on March-2020 and it is marked as red dotted line.)
+
+</P>
+
+
+
+
+![image](https://user-images.githubusercontent.com/130117092/230772945-226b0c01-bdf4-47b0-a96c-d6e5444f966d.png)
+
+![image](https://user-images.githubusercontent.com/130117092/230772955-cf525633-3a26-4dc3-9539-ea84bb2b1f74.png)
+
+<p>
+The hypothesis was somewhat correct, as shown in the trend line. Count of cafe w. Seating range 26+ decreased as of 2020 and 2021.
+However, we cannot conclude that the Covid lockdown played a major role, as the downward trend of # of cafe for all seating numbers (inclusive of 1~49) started 2016. Also if we look at the average seating # of cafe, it reduced from 25.5 to 23.5 from 2005.
+
+</p>
