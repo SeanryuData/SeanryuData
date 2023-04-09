@@ -26,7 +26,15 @@ ModeMode</em></li>
 <p>Please refer to my linked in page for more details on skills and certificates <a href="https://www.linkedin.com/in/sean-ryu-95745a1a2/details/certifications/">Sean_Ryu Linkedin</a></p>
 
 <h2>Coding Information</h2>
-<p>All of my code is contained in a single SQL file, which I have extensively commented on to explain the reasoning behind my choices. For the purpose of demonstrating my proficiency in the language, most, if not all, of the table alterations were made in SQL.</p>
+<p>All of my code is contained in a single SQL file, which I have extensively commented on to explain the reasoning behind my choices. For the purpose of demonstrating my proficiency in the language, most, if not all, of the table alterations were made in SQL.
+<strong>Link:</strong> <a href=
+"https://github.com/SeanryuData/SeanryuData/blob/main/Project.sql
+">SQL Codes URL</a>
+
+<strong>Link:</strong> <a href=
+"https://github.com/SeanryuData/SeanryuData/raw/main/Project%20version%201.pbix
+">PowerBI file for interactive report URL</a>
+</p>
 
 
 <h2>Project Status</h2>
