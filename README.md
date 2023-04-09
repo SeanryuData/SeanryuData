@@ -45,8 +45,12 @@ SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li
 <p>
 The original data set was downloaded in CSV, uploaded to Onedrive folder for an initial exploration.
 Then to increase the performance inside SSMS
-eliminate unncessary columns to for import, then to practice joining inside SQL, I purposly split the 
+eliminated unncessary columns, then to practice joining inside SQL, I purposly split the file into two parts [Shop] and [Add].
 </p>
-![image](https://user-images.githubusercontent.com/130117092/230755160-13e4ede2-26f4-477f-8bb2-f5adabb83d79.png)
 
+<h2>Outlier and flaws inside the data</h2>
+<p>
 
+  
+ <img src="https://user-images.githubusercontent.com/130117092/230755160-13e4ede2-26f4-477f-8bb2-f5adabb83d79.png" alt="Image description">
+</p>
