@@ -13,8 +13,10 @@
 <h2>Data Source</h2>
 <p>I used the following data set as the basis for this project:</p>
 <ul>
-  <li><strong>Data set name:</strong> <em>Data set name</em></li>
-  <li><strong>Link:</strong> <a href="Data set URL">Data set URL</a></li>
+  <li><strong>Data set name:</strong> <em>Café, restaurant, bistro seats
+</em></li>
+  <li><strong>Link:</strong> <a href="https://data.melbourne.vic.gov.au/explore/dataset/cafes-and-restaurants-with-seating-capacity/information/
+">Data set URL</a></li>
 </ul>
 
 <h2>Reason for Choosing Data</h2>
