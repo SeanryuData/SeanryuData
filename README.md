@@ -1,7 +1,7 @@
 ### Hi there 👋 Welcome to Sean's Data Analytic Portfolio.
 <h1>Project Melbourne Cafe</h1>
 
-<p>This is a project I decided to create for the purpose of gaining experience and utilizing my data analytics skills, which I acquired through various certification programs in SQL and PowerBI.</p>
+<p>This project is aimed at utilizing my data analytics skills and gaining more experience in data analysis. I have earned certifications in SQL and Power BI and I am enthusiastic about exploring the coffee culture in Melbourne by analyzing data from cafes and restaurants in the city. In this project, I will be using a dataset from the Melbourne government website on cafes and restaurants with seating capacity as my primary source of data..</p>
 
 <h2>Data Source</h2>
 <p>I used the following data set as the basis for this project:</p>
@@ -12,13 +12,13 @@
 ">Data set URL</a></li>
 
 <p>
-Data Limitation: Since the original data set is very limited for information on restaurant/cafe type, missing on revenue, profit and employee # etc. Which I believe is most important for market analysis. So please keep in mind that I made alot of assumption during with the project which might not be suitable for business insight!
+However, the dataset is limited in its scope as it does not provide much information on restaurant/cafe types, revenue, profit, and employee count, which are essential for a comprehensive market analysis. Therefore, it is important to note that some of the assumptions I made during the project may not be suitable for business insight.
 </p>
 </ul>
 
 <h2>Purpose of the Project</h2>
-<p>This is a project I created to apply and gain experience in my data analytics skills, which I learned through certifications in SQL and Power BI.
-I chose the cafes and restaurants with seating capacity data set from the Melbourne government website (https://data.melbourne.vic.gov.au/explore/dataset/cafes-and-restaurants-with-seating-capacity/information/) as it aligns with my recent coffee trip to Melbourne. As a coffee enthusiast, I was intrigued by the coffee culture in Melbourne and wanted to find insights to share from the data set. Moreover, I wanted to compare my data analytics findings to my personal experience visiting Melbourne in March 202</p>
+<p>As a coffee enthusiast, I wanted to compare my data analytics findings to my personal experience visiting Melbourne in March 2022. Moreover, I created this project to apply and gain more experience in my data analytics skills, which I learned through my certifications in SQL and Power BI.
+</p>
 
 <h2>Related Certifications Earned</h2>
 <ul>
@@ -64,10 +64,7 @@ eliminated unncessary columns, then to practice joining inside SQL, I purposly s
 <p>
 After completing the Data ETL - Extract, Transform (refer to project.sql), then load to Power BI. I found two "Flaws" inside the data set (Refer to below SC:)
  <img src="https://user-images.githubusercontent.com/130117092/230755160-13e4ede2-26f4-477f-8bb2-f5adabb83d79.png" alt="Image description">
-I see followings from BI visuals of above.
-Some of the Business had ridiculusly high value for Number_Of_Seats.
-There are some businesses with Regional Address value of (Blank).
-Which I will investigate inside SQL. (While I could investigate and perform most of the transformation inside MS powerBI, using Power Query. I still used SQL as it would be a good practice, please refer from line 184 of project.sql)
+I noticed some of the businesses had ridiculously high values for Number_Of_Seats, and there were some businesses with a regional address value of (Blank), which I investigated inside SQL. While I could investigate and perform most of the transformations inside MS Power BI using Power Query, I still used SQL for practice. Please refer to line 184 of project.sql.
 </p>
 
 
