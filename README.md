@@ -66,11 +66,20 @@ SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li
 <img src="https://user-images.githubusercontent.com/130117092/230755809-04cafe08-9676-4c24-84a8-461c3ad58dca.png" alt="Description of the image" width="500" height="300">
 <h2>Hypothesis and Insight #1</h2>
 <p>During a trip to Melbourne, it was observed that many cafes did not offer spacious seating, and many of the cafes with good Google reviews offered less than ten seats. The hypothesis was that since this is a CBD area, many businesses here decided to downsize to survive. To check if the hypothesis was true, a timed line plot visual was created inside Power BI together with a filtering slicer of different seating ranges.</p>
-image
+
+![image](https://user-images.githubusercontent.com/130117092/230772897-64ea75ab-4e21-4f74-8f94-8bb154116374.png)
+
+![image](https://user-images.githubusercontent.com/130117092/230772910-a06f0cba-7940-4b63-bb31-31bca68e977f.png)
+
 
 <p>Time line above is for all seating ranges below 50 (50+ are excluded as most of businesses were restaurants which are outside our interest-coffee specialty cafe)
 (Melbourne's lockdown period first started in March 2020 and is marked as a red dotted line.)</p>
-image
+
+![image](https://user-images.githubusercontent.com/130117092/230772945-226b0c01-bdf4-47b0-a96c-d6e5444f966d.png)
+
+![image](https://user-images.githubusercontent.com/130117092/230772955-cf525633-3a26-4dc3-9539-ea84bb2b1f74.png)
+
+
 
 <p>The hypothesis was somewhat correct, as shown in the trend line. The count of cafes with seating range 26+ decreased as of 2020 and 2021. However, it cannot be concluded that the Covid lockdown played a significant role, as the downward trend of the number of cafes for all seating numbers (inclusive of 1-49) started in 2016. Also, if we look at the average seating number of cafes, it reduced from 25.5 to 23.5 from 2005.</p>
 
