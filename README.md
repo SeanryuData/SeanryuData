@@ -91,7 +91,9 @@ image
 <h2>Hypothesis and Insight #3</h2>
 <p>Is there a relationship between the number of seats and location? Rent and lease prices are increasing towards the CBD area, so there may be more small cafes near the CBD. I will examine this relationship using two variables: "Block_ID" and "Latitude & Longitude."</p>
 
-![image](https://user-images.githubusercontent.com/130117092/230813540-d3b56bcd-3d8d-4652-8818-a7f70cb91eb5.png)
+
+
+<img src="https://user-images.githubusercontent.com/130117092/230813540-d3b56bcd-3d8d-4652-8818-a7f70cb91eb5.png" alt="Description of the image" width="500" height="300">
 
 <p>The above figures show scatter plots of the average seating number and summarized seating number versus Block_ID, but I could not find any apparent evidence of a relationship in either the plot or table examination.</p>
 image
