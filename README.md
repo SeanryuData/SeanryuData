@@ -78,10 +78,15 @@ image
 
 <h2>Hypothesis and Insight #2</h2>
 <p>Imagine a client has asked for advice on opening a cafe in Melbourne. Using the market analysis above, I have found that the general trend for the average number of seats in cafes is decreasing. Now, I want to determine which suburb would be most suitable (showing an increasing trend) for a client to open up a cafe. To do this, I filtered by seating range of 1-25 and added "Clue_small_area" as a visual to compare regional timeline plots.</p>
+
 ![image](https://user-images.githubusercontent.com/130117092/230810802-bae9a3f8-cd08-4cae-8c91-4abb4f058cf7.png)
+
 <p>The above timeline plot shows the trend of Port Melbourne cafes with seating ranges of 1-25. As seen in the figure, the number of coffee shops has been incrementally increasing since 2015, and the average number of seats has remained fairly consistent, while other regions have seen a decline trend.</p>
+
 ![image](https://user-images.githubusercontent.com/130117092/230811215-f0ed7d03-74b0-4347-9d53-78c7e764cc4a.png)
+
 ![image](https://user-images.githubusercontent.com/130117092/230811444-369967ff-662c-4efc-90fe-d8818793c119.png)
+
 <p>As of 2021, only one cafe in Port Melbourne offers indoor seating only, while the remaining six cafes offer both indoor and outdoor seating.</p>
 <h2>Hypothesis and Insight #3</h2>
 <p>Is there a relationship between the number of seats and location? Rent and lease prices are increasing towards the CBD area, so there may be more small cafes near the CBD. I will examine this relationship using two variables: "Block_ID" and "Latitude & Longitude."</p>
