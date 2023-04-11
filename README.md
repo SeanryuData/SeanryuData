@@ -1,10 +1,10 @@
 ### Hi there 👋 Welcome to Sean's Data Analytic Portfolio.
 <h1>Project Melbourne Cafe</h1>
 
-<p>This project is aimed at utilizing my data analytics skills and gaining more experience in data analysis. I have earned certifications in SQL and Power BI and I am enthusiastic about exploring the coffee culture in Melbourne by analyzing data from cafes and restaurants in the city. In this project, I will be using a dataset from the Melbourne government website on cafes and restaurants with seating capacity as my primary source of data..</p>
+<p>This project is aimed at further developing my data analytics skills by exploring the coffee culture in Melbourne. I will analyze data from cafes and restaurants in the city, using a dataset from the Melbourne government website on cafes and restaurants with seating capacity as my primary source of data. I have earned certifications in SQL and Power BI, which I will apply in this project</p>
 
 <h2>Data Source</h2>
-<p>I used the following data set as the basis for this project:</p>
+<p>The dataset used for this project is called "Café, restaurant, bistro seats." It contains information on cafes and restaurants in Melbourne, including their seating capacity. The dataset has 56987 rows and was last updated 2021.</p>
 <ul>
   <li><strong>Data set name:</strong> <em>Café, restaurant, bistro seats
 </em></li>
@@ -17,7 +17,7 @@ However, the dataset is limited in its scope as it does not provide much informa
 </ul>
 
 <h2>Purpose of the Project</h2>
-<p>As a coffee enthusiast, I wanted to compare my data analytics findings to my personal experience visiting Melbourne in March 2022. Moreover, I created this project to apply and gain more experience in my data analytics skills, which I learned through my certifications in SQL and Power BI.
+<p>The main goal of this project is to analyze data on cafes and restaurants in Melbourne and gain insights into the city's coffee culture. I will use my SQL and Power BI skills to perform data analysis and create interactive reports to visualize my findings.
 </p>
 
 <h2>Related Certifications Earned</h2>
@@ -52,105 +52,43 @@ SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li
 <li><em>Microsoft Power BI</em></li>
 <li><em>Microsoft Onedrive Excel</em></li>
 </ul>
-
-<h3>Data Exploration#1</h3>
-<p>
-The original data set was downloaded in CSV, uploaded to Onedrive folder for an initial exploration.
-Then to increase the performance inside SSMS
-eliminated unncessary columns, then to practice joining inside SQL, I purposly split the file into two parts [Shop] and [Add].
-</p>
-
-<h3>Data exploration#2</h3>
-<p>
-After completing the Data ETL - Extract, Transform (refer to project.sql), then load to Power BI. I found two "Flaws" inside the data set (Refer to below SC:)
- <img src="https://user-images.githubusercontent.com/130117092/230755160-13e4ede2-26f4-477f-8bb2-f5adabb83d79.png" alt="Image description">
-I noticed some of the businesses had ridiculously high values for Number_Of_Seats, and there were some businesses with a regional address value of (Blank), which I investigated inside SQL. While I could investigate and perform most of the transformations inside MS Power BI using Power Query, I still used SQL for practice. Please refer to line 184 of project.sql.
-</p>
-
-
-<h3>Data exploration#3</h3>
-<p>
-After further modifying the "View" tables inside  SQL, I created following visuals.
+<h3>Data Exploration #1</h3>
+<p>The original dataset was downloaded in CSV and uploaded to a OneDrive folder for initial exploration. To increase performance inside SQL Server Management Studio (SSMS), unnecessary columns were eliminated, and the file was purposely split into two parts, [Shop] and [Add], for practicing joining inside SQL.</p>
+<h3>Data Exploration #2</h3>
+<p>After completing the Data ETL process, which involved extracting, transforming, and loading data into Power BI (refer to project.sql), two issues were found within the dataset. The first issue was that some businesses had absurdly high values for the number of seats, and the second issue was that some businesses had a blank regional address value. While most of the transformations were performed inside Power BI using Power Query, SQL was still used for practice. Please refer to line 184 of project.sql.</p>
+<h3>Data Exploration #3</h3>
+<p>After further modifying the "View" tables inside SQL, the following visuals were created:</p>
 <ul>
-  <li><em>
-  (Census Year)Slicers and (Area)buttons for interactions between visuals.
-</em></li>
-<li><em>
-Piecharts of Seating types and Small Area to compare the categorial ratios.
-</em></li>
-<li><em>
-Map chart using the latitude and longitude values to check the distribution of locations of Businesses.
-</em></li>
+  <li><em>Census Year slicers and Area buttons for interactions between visuals.</em></li>
+  <li><em>Pie charts of seating types and small areas to compare categorical ratios.</em></li>
+  <li><em>Map chart using the latitude and longitude values to check the distribution of business locations.</em></li>
 </ul>
-
-<img src="https://user-images.githubusercontent.com/130117092/230755809-04cafe08-9676-4c24-84a8-461c3ad58dca.png" alt="description of the image" width="500" height="300">
-
+<img src="https://user-images.githubusercontent.com/130117092/230755809-04cafe08-9676-4c24-84a8-461c3ad58dca.png" alt="Description of the image" width="500" height="300">
 <h2>Hypothesis and Insight #1</h2>
-<p>
-During my trip in Melbourne, I found it very interesting to see that not many cafe offered a spacious seats, many of the cafe with good google reviews I visited offered seats less than 10.
-My hypothesis was "Since this is a CBD area, so many business here decided to downsize to survive."
-To check if the hypothesis above is true, I created timed line plot visual inside power bi together with a filtering slicer of different seating ranges.
-</p>
+<p>During a trip to Melbourne, it was observed that many cafes did not offer spacious seating, and many of the cafes with good Google reviews offered less than ten seats. The hypothesis was that since this is a CBD area, many businesses here decided to downsize to survive. To check if the hypothesis was true, a timed line plot visual was created inside Power BI together with a filtering slicer of different seating ranges.</p>
+image
 
-![image](https://user-images.githubusercontent.com/130117092/230772897-64ea75ab-4e21-4f74-8f94-8bb154116374.png)
+<p>Time line above is for all seating ranges below 50 (50+ are excluded as most of businesses were restaurants which are outside our interest-coffee specialty cafe)
+(Melbourne's lockdown period first started in March 2020 and is marked as a red dotted line.)</p>
+image
 
-<p>
-
-</P>
-
-![image](https://user-images.githubusercontent.com/130117092/230772910-a06f0cba-7940-4b63-bb31-31bca68e977f.png)
-
-<p>
-Time line above is for all seating ranges below 50 (50+ are excluded as most of businesses were restaurants which is outside of our interest-coffee specialty cafe)
-(Melbourne's lockdown period first started on March-2020 and it is marked as red dotted line.)
-
-</P>
+<p>The hypothesis was somewhat correct, as shown in the trend line. The count of cafes with seating range 26+ decreased as of 2020 and 2021. However, it cannot be concluded that the Covid lockdown played a significant role, as the downward trend of the number of cafes for all seating numbers (inclusive of 1-49) started in 2016. Also, if we look at the average seating number of cafes, it reduced from 25.5 to 23.5 from 2005.</p>
 
 
-
-
-![image](https://user-images.githubusercontent.com/130117092/230772945-226b0c01-bdf4-47b0-a96c-d6e5444f966d.png)
-
-![image](https://user-images.githubusercontent.com/130117092/230772955-cf525633-3a26-4dc3-9539-ea84bb2b1f74.png)
-
-<p>
-The hypothesis was somewhat correct, as shown in the trend line. Count of cafe w. Seating range 26+ decreased as of 2020 and 2021.
-However, we cannot conclude that the Covid lockdown played a major role, as the downward trend of # of cafe for all seating numbers (inclusive of 1~49) started 2016. Also if we look at the average seating # of cafe, it reduced from 25.5 to 23.5 from 2005.
-
-</p>
 
 <h2>Hypothesis and Insight #2</h2>
-
-<p>Let's say a client asked me for my insightful advice to open up a cafe in Melbourne. From the market analysis above, I already found the general trend of AVG # of seats are decreasing. Now I want to take a look which suburb would be most suitable (increasing in trend) for client to open up a cafe. So continueing with the seating_range of 1-25, another filtering, Clue_small_area is added as a visual to compare regional timeline plot.
-</p>
+<p>Imagine a client has asked for advice on opening a cafe in Melbourne. Using the market analysis above, I have found that the general trend for the average number of seats in cafes is decreasing. Now, I want to determine which suburb would be most suitable (showing an increasing trend) for a client to open up a cafe. To do this, I filtered by seating range of 1-25 and added "Clue_small_area" as a visual to compare regional timeline plots.</p>
 ![image](https://user-images.githubusercontent.com/130117092/230810802-bae9a3f8-cd08-4cae-8c91-4abb4f058cf7.png)
-<p>
-Above is timeline plot of Port Melbourne w. cafe seating range 1~25. As you can see from the fig. The # of coffee shops are making incremental trend since 2015 and AVG # of seats are being fairly consistant. Where as other regions had decline trend.
-</p>
+<p>The above timeline plot shows the trend of Port Melbourne cafes with seating ranges of 1-25. As seen in the figure, the number of coffee shops has been incrementally increasing since 2015, and the average number of seats has remained fairly consistent, while other regions have seen a decline trend.</p>
 ![image](https://user-images.githubusercontent.com/130117092/230811215-f0ed7d03-74b0-4347-9d53-78c7e764cc4a.png)
 ![image](https://user-images.githubusercontent.com/130117092/230811444-369967ff-662c-4efc-90fe-d8818793c119.png)
-<p>
-Inside Port melbourne as for 2021,only 1 cafe was offering Indoor seat only and rest 6 cafes were offering both indoor and outdoor seats.
-</p>
-
+<p>As of 2021, only one cafe in Port Melbourne offers indoor seating only, while the remaining six cafes offer both indoor and outdoor seating.</p>
 <h2>Hypothesis and Insight #3</h2>
-<p>
-Will there be a relationship between # of seats and location? The price of rent and lease will be increasing towards CBD area, so there will be more of small cafe near CBD.
-I will answer this in two variables which is Block_ID and Latitude & Longitude.
-</p>
+<p>Is there a relationship between the number of seats and location? Rent and lease prices are increasing towards the CBD area, so there may be more small cafes near the CBD. I will examine this relationship using two variables: "Block_ID" and "Latitude & Longitude."</p>
+image
+image
 
-![image](https://user-images.githubusercontent.com/130117092/230812409-8819c97a-152b-4b4e-9750-75f9ac69dcda.png)
+<p>The above figures show scatter plots of the average seating number and summarized seating number versus Block_ID, but I could not find any apparent evidence of a relationship in either the plot or table examination.</p>
+image
 
-![image](https://user-images.githubusercontent.com/130117092/230812986-0d04a49a-e0a4-4fe3-ad79-82760c7c9534.png)
-
-<p>
-Above figures are scatter plot of AVG Seating # vs Block_Id and No summarized Seating # vs Block_ID, which I could not find apparent evidence of relationship in both the plot and table examination.
-</p>
-
-![image](https://user-images.githubusercontent.com/130117092/230813540-d3b56bcd-3d8d-4652-8818-a7f70cb91eb5.png)
-
-<p>
-Above figure is scatter plot of AVG Seating # vs Latitude and longitude. Which I could also not find any signs of relationship.
-However, what we can see is a big cluter near longitude of 144.96 and Latitude of -37.82 which is right above Queen's Bridge street inside CBD.
-(I wish to have information of either revenue or #of average customer visiting the cafe, as that would likely to be different by location the most.)
-</p>
+<p>The above figure shows a scatter plot of the average seating number versus Latitude and Longitude. However, I could not find any signs of a relationship. What I did notice was a large cluster near the longitude of 144.96 and the latitude of -37.82, which is located just above Queen's Bridge street inside the CBD. (I wish I had information on either the revenue or the average number of customers visiting cafes, as that would likely differ the most by location.)</p>
