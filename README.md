@@ -92,10 +92,14 @@ image
 <p>Is there a relationship between the number of seats and location? Rent and lease prices are increasing towards the CBD area, so there may be more small cafes near the CBD. I will examine this relationship using two variables: "Block_ID" and "Latitude & Longitude."</p>
 
 
+![image](https://user-images.githubusercontent.com/130117092/230812409-8819c97a-152b-4b4e-9750-75f9ac69dcda.png)
 
-<img src="https://user-images.githubusercontent.com/130117092/230813540-d3b56bcd-3d8d-4652-8818-a7f70cb91eb5.png" alt="Description of the image" width="500" height="300">
+![image](https://user-images.githubusercontent.com/130117092/230812986-0d04a49a-e0a4-4fe3-ad79-82760c7c9534.png)
+
+
 
 <p>The above figures show scatter plots of the average seating number and summarized seating number versus Block_ID, but I could not find any apparent evidence of a relationship in either the plot or table examination.</p>
-image
+
+<img src="https://user-images.githubusercontent.com/130117092/230813540-d3b56bcd-3d8d-4652-8818-a7f70cb91eb5.png" alt="Description of the image" width="500" height="300">
 
 <p>The above figure shows a scatter plot of the average seating number versus Latitude and Longitude. However, I could not find any signs of a relationship. What I did notice was a large cluster near the longitude of 144.96 and the latitude of -37.82, which is located just above Queen's Bridge street inside the CBD. (I wish I had information on either the revenue or the average number of customers visiting cafes, as that would likely differ the most by location.)</p>
