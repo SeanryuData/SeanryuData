@@ -10,6 +10,8 @@
 </em></li>
   <li><strong>Link:</strong> <a href="https://data.melbourne.vic.gov.au/explore/dataset/cafes-and-restaurants-with-seating-capacity/information/
 ">Data set URL</a></li>
+<p>Ref1:https://www.melbourne.vic.gov.au/SiteCollectionDocuments/clue-2021-summary-report.pdf</p>
+<p>Ref2:https://www.melbourne.vic.gov.au/SiteCollectionDocuments/forecasts-summary-report.pdf</P>
 
 <p>
 However, the dataset is limited in its scope as it does not provide much information on restaurant/cafe types, revenue, profit, and employee count, which are essential for a comprehensive market analysis. Therefore, it is important to note that some of the assumptions I made during the project may not be suitable for business insight.
@@ -83,6 +85,12 @@ SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li
 
 <p>The hypothesis was somewhat correct, as shown in the trend line. The count of cafes with seating range 26+ decreased as of 2020 and 2021. However, it cannot be concluded that the Covid lockdown played a significant role, as the downward trend of the number of cafes for all seating numbers (inclusive of 1-49) started in 2016. Also, if we look at the average seating number of cafes, it reduced from 25.5 to 23.5 from 2005.</p>
 
+![image](https://user-images.githubusercontent.com/130117092/233541120-3a7c7414-51df-465e-b89e-4e4dbcc48b80.png)
+
+<p>
+Above hypothesis also aligns with 2021 Census of Land Use and Employment report published by City of Melbourne [ref1]
+</p>
+
 
 
 <h2>Hypothesis and Insight #2</h2>
@@ -97,6 +105,13 @@ SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li
 ![image](https://user-images.githubusercontent.com/130117092/230811444-369967ff-662c-4efc-90fe-d8818793c119.png)
 
 <p>As of 2021, only one cafe in Port Melbourne offers indoor seating only, while the remaining six cafes offer both indoor and outdoor seating.</p>
+
+![image](https://user-images.githubusercontent.com/130117092/233542242-62c1f7d6-e6e6-4bde-b93c-5943d054a621.png)
+
+<p>The hypothesis is also backed up by Forecast Summary Report published by City of Melbourne [ref2]. As you can see from above table Jobs by small area is expected increase the most inside the region port Melbourne.</p>
+
+
+
 <h2>Hypothesis and Insight #3</h2>
 <p>Is there a relationship between the number of seats and location? Rent and lease prices are increasing towards the CBD area, so there may be more small cafes near the CBD. I will examine this relationship using two variables: "Block_ID" and "Latitude & Longitude."</p>
 
