@@ -130,7 +130,6 @@ on new_add.[Add] = sh.[add];
 
 --Create a view based on the fields I need for Power BI then save it as view
 Create view full_table as
-
 select a.[Shop] as Business_name, a.Census_year, a.Number_of_seats, a.Seating_type,
 b.*
 from shop as a
@@ -259,6 +258,7 @@ where CLUE_small_area is null;
 --I dont see Address column in my View, I missed it out from above haha
 
 DROP VIEW [dbo].[full_table];
+
 CREATE VIEW full_table AS
 SELECT a.[Shop] AS Business_name, a.Census_year, a.Number_of_seats, a.Seating_type,b.[Add],
 b.Block_ID, b.CLUE_small_area, b.Longitude, b.Latitude,
@@ -276,6 +276,7 @@ from full_table
 where CLUE_small_area is null;
 
 DROP VIEW [dbo].[full_table];
+
 CREATE VIEW full_table AS
 SELECT a.[Shop] AS Business_name, a.Census_year, a.Number_of_seats, a.Seating_type,b.[Add],
 b.Block_ID, b.CLUE_small_area, b.Longitude, b.Latitude,
@@ -289,7 +290,162 @@ LEFT JOIN new_add AS b ON b.[Add] = a.[add]
 where b.[Add] is not null;
 
 
--- data exploring, no rows containing null on Add.
+-- Lets create a rank column to use for yearly change in Total seats for each cafe.
+select f.[add], Census_year,SUM(number_of_seats) as totalS, 
+rank() over (partition by f.[add] order by census_year,sum(Number_of_seats)) as ranker, 
+lag(
+SUM(number_of_seats),1
+) over (partition by f.[add] order by census_year)
+from full_table f
+group by f.[add], Census_year 
+
+
+--  I want to use the ranker-1 as a value for its lag. For that there need to be a self jointo use ranker as a value
+select f.[add], Census_year,SUM(number_of_seats) as totalS, 
+rank() over (partition by f.[add] order by census_year,sum(Number_of_seats)) as ranker, 
+lag(
+SUM(number_of_seats),1
+) over (partition by f.[add] order by census_year)
+from full_table f
+group by f.[add], Census_year 
+
+SELECT [add], Census_year, totalS, ranker, 
+       (ranker - 1) as ranker_minus_one
+FROM (
+    SELECT f.[add], Census_year, SUM(number_of_seats) as totalS, 
+           RANK() OVER (PARTITION BY f.[add] ORDER BY census_year, SUM(Number_of_seats)) as ranker, 
+           LAG(SUM(number_of_seats), 1) OVER (PARTITION BY f.[add] ORDER BY census_year)
+    FROM full_table f
+    GROUP BY f.[add], Census_year
+) as subquery
+
+
+SELECT [add], Census_year, totalS, ranker, 
+       (ranker - 1) as ranker_minus_one
+FROM (
+    SELECT f.[add], Census_year, SUM(number_of_seats) as totalS, 
+           RANK() OVER (PARTITION BY f.[add] ORDER BY census_year, SUM(Number_of_seats)) as ranker, 
+           LAG(SUM(number_of_seats), 1) OVER (PARTITION BY f.[add] ORDER BY census_year) as prev_year_total
+    FROM full_table f
+    GROUP BY f.[add], Census_year
+) as subquery
+
+SELECT a.[add], a.Census_year, a.totalS, a.ranker, 
+       (a.ranker - 1) as ranker_minus_one, b.totalS as prev_year_totalS
+FROM (
+    SELECT f.[add], Census_year, SUM(number_of_seats) as totalS, 
+           RANK() OVER (PARTITION BY f.[add] ORDER BY census_year, SUM(Number_of_seats)) as ranker, 
+           LAG(SUM(number_of_seats), 1) OVER (PARTITION BY f.[add] ORDER BY census_year) as prev_year_total
+    FROM full_table f
+    GROUP BY f.[add], Census_year
+) AS a
+LEFT JOIN (
+    SELECT f.[add], Census_year, SUM(number_of_seats) as totalS
+    FROM full_table f
+    GROUP BY f.[add], Census_year
+) AS b
+ON a.[add] = b.[add] AND a.Census_year - 1 = b.Census_year
+
+--While I could use Lag function to bring TotalS value of lag of Census_Year - (rank-1).
+--I thought it would make it lot more simple for me to use self join of a.Censusyear = b.censusyear-1
+--to use selfjoin with Total S. I need to subquery
+
+
+SELECT a.[add], b.Census_year,a.Census_year, a.totalS, b.totalS
+FROM 
+(SELECT [add], Census_year, SUM(number_of_seats) AS totalS
+from full_table
+group by [add], Census_year
+) as a
+left JOIN 
+(SELECT [add], Census_year, SUM(number_of_seats) AS totalS
+from full_table
+group by [add], Census_year
+)
+as b
+    ON a.[add] = b.[add] AND a.Census_year - 1 = b.Census_year
+ORDER BY a.[add], a.Census_year,b.Census_year;
+
+-- I realised that for self join, using CTE will reduce the work as you only have to write the query once.
+With cte as(
+SELECT [add], Census_year, SUM(number_of_seats) AS totalS
+from full_table
+group by [add], Census_year)
+
+SELECT a.[add],a.Census_year, a.totalS, b.totalS as TotalS_prev_year
+FROM cte as a
+left JOIN 
+cte as b
+    ON a.[add] = b.[add] AND a.Census_year - 1 = b.Census_year
+ORDER BY a.[add], a.Census_year,b.Census_year;
+
+--perfect, now lets calculate the annual change in TotalSeats by subtracting the value.
+With cte as(
+SELECT [add], Census_year, SUM(number_of_seats) AS totalS
+from full_table
+group by [add], Census_year)
+
+SELECT a.[add],a.Census_year,a.totalS, b.totalS-a.totalS as Change_in_Seats
+FROM cte as a
+left JOIN 
+cte as b
+    ON a.[add] = b.[add] AND a.Census_year - 1 = b.Census_year
+ORDER BY a.[add], a.Census_year,b.Census_year;
+
+
+--I already checked the graph of general trend of change in seats which were reducing over time. But lets see if thats actually the case by using Average.
+With cte as(
+SELECT [add], Census_year, SUM(number_of_seats) AS totalS
+from full_table
+group by [add], Census_year)
+
+SELECT avg(cast(b.totalS-a.totalS as float)) as AvgChange_in_Seats
+FROM cte as a
+left JOIN 
+cte as b
+    ON a.[add] = b.[add] AND a.Census_year - 1 = b.Census_year
+where b.Census_year is not null
+
+--Resulted in -.0315 as expected and checked by visual.
+--Lets also check by different seat_range
+
+With cte as(
+SELECT [add], Census_year, SUM(number_of_seats) AS totalS, seat_range
+from full_table
+group by [add], Census_year,seat_range)
+
+SELECT avg(cast(b.totalS-a.totalS as float)) as AvgChange_in_Seats,a.seat_range
+FROM cte as a
+left JOIN 
+cte as b
+    ON a.[add] = b.[add] AND a.Census_year - 1 = b.Census_year
+where b.Census_year is not null
+group by a.seat_range;
+
+--there is massive positive value for range 1-25. 21.8. Which indicating the calculation is also adding up when the new shop is introduced.
+--lets check if thats actually the case.
+--seating range is preventing me from using aggregate function, as it is calculated based on the number of seats rather than TotalS
+--so there are two seating range for each seating type even on the same census_year and business name.
+-- I need to readdress seat range so it is based on the total seats rather than number of seats.
+
+With cte as(
+SELECT [add], Census_year, SUM(number_of_seats) AS totalS, seat_range
+from full_table
+group by [add], Census_year,seat_range)
+
+SELECT a.[add],a.Census_year,a.totalS --,cast(b.totalS-a.totalS as float) as Change_in_Seats,a.seat_range
+FROM cte as a
+left JOIN 
+cte as b
+    ON a.[add] = b.[add] AND a.Census_year - 1 = b.Census_year
+
+group by a.[add], a.Census_year, a.totalS
+order by a.[add], a.Census_year
+
+SELECT [add], Census_year, SUM(number_of_seats) AS totalS
+from full_table a
+group by [add], Census_year
+order by a.[add], a.Census_year
+
 select *
 from full_table
-where CLUE_small_area is null;
