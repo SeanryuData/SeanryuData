@@ -22,40 +22,8 @@ However, the dataset is limited in its scope as it does not provide much informa
 <p>The main goal of this project is to analyze data on cafes and restaurants in Melbourne and gain insights into the city's coffee culture. I will use my SQL and Power BI skills to perform data analysis and create interactive reports to visualize my findings.
 </p>
 
-<h2>Related Certifications Earned</h2>
-<ul>
-  <li><em>
-SQL Challenge - IntermediateSQL Challenge - Intermediate
-ModeMode</em></li>
-<li><em>Microsoft Certified: Power BI Data Analyst Associate</em></li>
-</ul>
-<p>Please refer to my linked in page for more details on skills and certificates <a href="https://www.linkedin.com/in/sean-ryu-95745a1a2/details/certifications/">Sean_Ryu Linkedin</a></p>
 
-<h2>Coding Information</h2>
-<p>All of my code is contained in a single SQL file, which I have extensively commented on to explain the reasoning behind my choices. For the purpose of demonstrating my proficiency in the language, most, if not all, of the table alterations were made in SQL.
-<strong>Link:</strong> <a href=
-"https://github.com/SeanryuData/SeanryuData/blob/main/Project.sql
-">SQL Codes URL</a>
-
-<strong>Link:</strong> <a href=
-"https://github.com/SeanryuData/SeanryuData/raw/main/Project%20version%201.pbix
-">PowerBI file for interactive report URL</a>
-</p>
-
-
-<h2>Project Status</h2>
-<p>This project is being worked on daily in my free time after work, so please check for updates regularly. As of now, the project is ongoing.
-</p>
-
-<h2>Programmes used</h2>
-<ul>
-  <li><em>
-SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li>
-<li><em>Microsoft Power BI</em></li>
-<li><em>Microsoft Onedrive Excel</em></li>
-</ul>
-
-<h2>SQL operations used</h2>
+<h2>SQL Functions used</h2>
 <p>
 Another purpose of this project is to demonstrate my ability to transfoam data for bi analysis. 
 <br>
@@ -105,10 +73,11 @@ So I will be referencing the SQL functions I practice through this project. (exc
   </em></li>
 
 
-
 </ul>
 
-
+<h2>
+Data Exploration
+</h2>
 <h3>Data Exploration #1</h3>
 <p>The original dataset was downloaded in CSV and uploaded to a OneDrive folder for initial exploration. To increase performance inside SQL Server Management Studio (SSMS), unnecessary columns were eliminated, and the file was purposely split into two parts, [Shop] and [Add], for practicing joining inside SQL.</p>
 <h3>Data Exploration #2</h3>
@@ -182,3 +151,42 @@ Above hypothesis also aligns with 2021 Census of Land Use and Employment report 
 <img src="https://user-images.githubusercontent.com/130117092/230813540-d3b56bcd-3d8d-4652-8818-a7f70cb91eb5.png" alt="Description of the image" width="500" height="300">
 
 <p>The above figure shows a scatter plot of the average seating number versus Latitude and Longitude. However, I could not find any signs of a relationship. What I did notice was a large cluster near the longitude of 144.96 and the latitude of -37.82, which is located just above Queen's Bridge street inside the CBD. (I wish I had information on either the revenue or the average number of customers visiting cafes, as that would likely differ the most by location.)</p>
+
+
+
+
+<h2>Related Certifications Earned</h2>
+<ul>
+  <li><em>
+SQL Challenge - IntermediateSQL Challenge - Intermediate
+ModeMode</em></li>
+<li><em>Microsoft Certified: Power BI Data Analyst Associate</em></li>
+</ul>
+<p>Please refer to my linked in page for more details on skills and certificates <a href="https://www.linkedin.com/in/sean-ryu-95745a1a2/details/certifications/">Sean_Ryu Linkedin</a></p>
+
+<h2>Coding Information</h2>
+<p>All of my code is contained in a single SQL file, which I have extensively commented on to explain the reasoning behind my choices. For the purpose of demonstrating my proficiency in the language, most, if not all, of the table alterations were made in SQL.
+<strong>Link:</strong> <a href=
+"https://github.com/SeanryuData/SeanryuData/blob/main/Project.sql
+">SQL Codes URL</a>
+
+<strong>Link:</strong> <a href=
+"https://github.com/SeanryuData/SeanryuData/raw/main/Project%20version%201.pbix
+">PowerBI file for interactive report URL</a>
+</p>
+
+
+<h2>Project Status</h2>
+<p>This project is being worked on daily in my free time after work, so please check for updates regularly. As of now, the project is ongoing.
+</p>
+
+<h2>Programmes used</h2>
+<ul>
+  <li><em>
+TSQL, SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li>
+<li><em>Microsoft Power BI</em></li>
+<li><em>Microsoft Onedrive Excel</em></li>
+</ul>
+
+
+
