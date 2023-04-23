@@ -24,8 +24,11 @@ However, the dataset is limited in its scope as it does not provide much informa
 </ul>
 
 <h2>Purpose of the Project</h2>
-<p>The main goal of this project is to analyze data on cafes and restaurants in Melbourne and gain insights into the city's coffee culture. I will use my SQL and Power BI skills to perform data analysis and create interactive reports to visualize my findings.
+<p>The main goal of this project is to analyze data on cafes and restaurants in Melbourne and gain insights into the city's coffee culture. I will use my SQL and Power BI skills to perform data analysis and create interactive reports to visualize my findings. [The files can be found in Github download.]
 </p>
+
+<strong>Link:</strong> <a href="https://public.tableau.com/app/profile/sean.ryu
+">Sean Ryu Tableau</a>
 
 
 <h2>SQL Functions used</h2>
