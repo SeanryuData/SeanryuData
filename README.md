@@ -1,7 +1,11 @@
 ### Hi there 👋 Welcome to Sean's Data Analytic Portfolio.
 <h1>Project Melbourne Cafe</h1>
 
-<p>This project is aimed at further developing my data analytics skills by exploring the coffee culture in Melbourne. I will analyze data from cafes and restaurants in the city, using a dataset from the Melbourne government website on cafes and restaurants with seating capacity as my primary source of data. I have earned certifications in SQL and Power BI, which I will apply in this project</p>
+<p>This project is aimed at further developing my data analytics skills by exploring the coffee culture in Melbourne. I will analyze data from cafes and restaurants in the city, using a dataset from the Melbourne government website on cafes and restaurants with seating capacity as my primary source of data. I studied SQL and Power BI from free course and education documents and refered Microsoft and Mode.com especially often.
+<br>
+My study started from end last year and while I realise I need more studies to hone skills, I feel confidence using and understanding SQL languages and handling BI tools.
+I have earned certifications in SQL and Power BI end of 2022 which described in bottom of project page, which I will applied in this project
+</p>
 
 <h2>Data Source</h2>
 <p>The dataset used for this project is called "Café, restaurant, bistro seats." It contains information on cafes and restaurants in Melbourne, including their seating capacity. The dataset has 56987 rows and was last updated 2021.</p>
