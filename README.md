@@ -54,6 +54,61 @@ SSMS (MySQL - took more than 1 hour to import data, so changed to SSMS)</em></li
 <li><em>Microsoft Power BI</em></li>
 <li><em>Microsoft Onedrive Excel</em></li>
 </ul>
+
+<h2>SQL operations used</h2>
+<p>
+Another purpose of this project is to demonstrate my ability to transfoam data for bi analysis. 
+<br>
+[Hiring managers may refer to the sql code line link below:]
+So I will be referencing the SQL functions I practice through this project. (exclusding really basic functions like single aggregation, select from where etc..)
+</p>
+<ul>
+  <li><em>
+  Calling table information, then copy its data types to create table and insert filtered value:
+  https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L36
+  </em></li>
+
+
+  <li><em>
+  Basic where clause operation for filtering out data to check, then removing unncessary rows:
+  https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L78
+  </em></li>
+  
+    <li><em>
+   Basic table Joins:
+  https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L126
+  </em></li>
+  
+    <li><em>
+  Basic Aggregate function:
+  https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L187
+  </em></li>
+  
+    <li><em>
+   Altering view to add in new values to the view.
+  https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L200
+  </em></li>
+  
+    <li><em>
+    Using rank inside windows function to find out sequencial number of cafe for census year
+  https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L294
+  </em></li>
+  
+    <li><em>
+    Using Subquery + Selfjoin to find difference in seating value for its sequencial year
+  https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L333
+  </em></li>
+
+    <li><em>
+    Using With Function + Self join to find average change in value for its sequencial year
+  https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L412
+  </em></li>
+
+
+
+</ul>
+
+
 <h3>Data Exploration #1</h3>
 <p>The original dataset was downloaded in CSV and uploaded to a OneDrive folder for initial exploration. To increase performance inside SQL Server Management Studio (SSMS), unnecessary columns were eliminated, and the file was purposely split into two parts, [Shop] and [Add], for practicing joining inside SQL.</p>
 <h3>Data Exploration #2</h3>
