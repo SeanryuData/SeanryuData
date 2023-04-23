@@ -119,6 +119,14 @@ Below is Tableau version of the same dashboard created.
 ![image](https://user-images.githubusercontent.com/130117092/230772955-cf525633-3a26-4dc3-9539-ea84bb2b1f74.png)
 
 
+<p>
+Below is tableau version of the timeline.
+The trend is little different because I am using [newtable1] instead [full_table] as I found a fault on Number of seats column. (please refer to my sql code)
+</p>
+
+![image](https://user-images.githubusercontent.com/130117092/233831920-9d291e4b-fbfd-42f0-84c1-fad9f3855728.png)
+
+
 
 <p>The hypothesis was somewhat correct, as shown in the trend line. The count of cafes with seating range 26+ decreased as of 2020 and 2021. However, it cannot be concluded that the Covid lockdown played a significant role, as the downward trend of the number of cafes for all seating numbers (inclusive of 1-49) started in 2016. Also, if we look at the average seating number of cafes, it reduced from 25.5 to 23.5 from 2005.</p>
 
