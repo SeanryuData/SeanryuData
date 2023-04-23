@@ -103,6 +103,14 @@ Data Exploration
 ![image](https://user-images.githubusercontent.com/130117092/230772910-a06f0cba-7940-4b63-bb31-31bca68e977f.png)
 
 
+<p>
+Below is Tableau version of the same dashboard created.
+</p>
+
+![image](https://user-images.githubusercontent.com/130117092/233831791-0b9fbf1a-b388-4c4b-9646-a960760546f4.png)
+
+
+
 <p>Time line above is for all seating ranges below 50 (50+ are excluded as most of businesses were restaurants which are outside our interest-coffee specialty cafe)
 (Melbourne's lockdown period first started in March 2020 and is marked as a red dotted line.)</p>
 
