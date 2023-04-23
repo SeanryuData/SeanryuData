@@ -149,6 +149,23 @@ Above hypothesis also aligns with 2021 Census of Land Use and Employment report 
 
 ![image](https://user-images.githubusercontent.com/130117092/230811444-369967ff-662c-4efc-90fe-d8818793c119.png)
 
+<p>
+Below is dashboard of Tableau on same axis. Here you can see interesting "cut" between two graphs, where there are no 1-25 range after Census Year, 2004
+</p>
+
+![image](https://user-images.githubusercontent.com/130117092/233831998-c8537505-a276-49e7-82ca-839bc391dd0e.png)
+
+<p>
+Above problem was checked and verified by using 'tooltip' function of Tableau then creating a Custom query table using where clause from inside Tableau (refer to screenshots below)
+</p>
+
+![image](https://user-images.githubusercontent.com/130117092/233832137-1b8d7113-2839-4c90-aa39-1efd7b0c11f2.png)
+
+
+![image](https://user-images.githubusercontent.com/130117092/233832103-d051a9d9-f6b5-4e37-a0b1-6ee5246da34e.png)
+
+
+
 <p>As of 2021, only one cafe in Port Melbourne offers indoor seating only, while the remaining six cafes offer both indoor and outdoor seating.</p>
 
 ![image](https://user-images.githubusercontent.com/130117092/233542242-62c1f7d6-e6e6-4bde-b93c-5943d054a621.png)
