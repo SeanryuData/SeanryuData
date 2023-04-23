@@ -74,32 +74,32 @@ So I will be referencing the SQL functions I practice through this project. (exc
   https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L78
   </em></li>
   
-    <li><em>
-   Basic table Joins:
+  <li><em>
+  Basic table Joins:
   https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L126
   </em></li>
   
-    <li><em>
+  <li><em>
   Basic Aggregate function:
   https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L187
   </em></li>
   
-    <li><em>
+  <li><em>
    Altering view to add in new values to the view.
   https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L200
   </em></li>
   
-    <li><em>
+  <li><em>
     Using rank inside windows function to find out sequencial number of cafe for census year
   https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L294
   </em></li>
   
-    <li><em>
+  <li><em>
     Using Subquery + Selfjoin to find difference in seating value for its sequencial year
   https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L333
   </em></li>
 
-    <li><em>
+  <li><em>
     Using With Function + Self join to find average change in value for its sequencial year
   https://github.com/SeanryuData/SeanryuData/blob/20e1f4b9db0e845d0641cd6808c7fe68291f5a48/Project.sql#L412
   </em></li>
